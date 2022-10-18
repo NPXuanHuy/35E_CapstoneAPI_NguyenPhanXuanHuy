@@ -1,1 +1,1 @@
-# 35E_CapstoneAPI_NguyenPhanXuanHuy
+# JS_Capstone

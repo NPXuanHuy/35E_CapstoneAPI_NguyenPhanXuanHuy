@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Capstone</title>
+
+    <!-- FONT GOOGLE INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+ 
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+              <div class="header__left"></div>
+        <div class="header__right">
+          <div class="header__right--cart">
+            <div class="header__right--img"></div>
+            <div class="header__right--number">(1)</div>
+          </div>
+          <div class="header__right--signup">
+            <div class="header__right--login">
+              <p>Login</p>
+            </div>
+            <div class="header__right--register">
+              <p>Register</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="nav">
+         <div class="nav__content">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Woman</a></li>
+              <li><a href="#">Kid</a></li>
+              <li><a href="#">Sport</a></li>
+              <li><a href="register.html">Register</a></li>
+              </ul>
+         </div>
+          
+    </section>
+
+    <section class="carousel">
+        <div class="carousel__img"></div>
+        <div class="carousel__content">
+            <div class="carousel__name">
+                Product name
+            </div>
+            <div class="carousel__descrip">
+                Product description...
+            </div>
+            <btn class="carousel__btn"><a href="./detail.html">Buy now</a></btn>
+        </div>
+        <div class="carousel__elip">
+            <div class="carousel__elip--item"></div>
+            <div class="carousel__elip--item"></div>
+            <div class="carousel__elip--item"></div>
+        </div>
+        <div class="carousel__pre">
+            <img src="./image/Polygon 2.png" alt="">
+        </div>
+        <div class="carousel__next">
+            <img src="./image/Polygon 1.png" alt="">
+        </div>
+    </section>
+
+    <section class="product">
+      <div class="product__text">-Product Feature-</div>
+        
+        <div id="product__content" class="product__content">
+        </div>
+    </section>
+    
+<!-- AXIOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js" integrity="sha512-26uCxGyoPL1nESYXHQ+KUmm3Maml7MEQNWU8hIt1hJaZa5KQAQ5ehBqK6eydcCOh6YAuZjV3augxu/5tY4fsgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/controller/index.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <section class="product">
+  <div class="product__text">-Product Feature-</div>
+    
+    <div class="product__content">
+      <div class="product__item--top">
+        <div class="product__item">
+          <div class="product__item--content">
+            <div  class="product__item--img">
+              <img id="img1" src="./image/image5.png" alt="">
+          </div>
+          <div class="product__item--text">
+            <div id="name1" class="product__item--name">
+              Adidas Prophere
+            </div>
+            <div id="des1" class="product__item--descrip">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi repudiandae id assumenda ipsum dolorum vitae, neque dolore saepe qui. Impedit vel iure quisquam illo, saepe repellendus incidunt laborum repellat.
+            </div>
+          </div>
+          <div class="product__item--buy">
+              <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+              <div id="price1" class="product__item--price">85$</div>
+          </div>
+          </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item--content">
+              <div  class="product__item--img">
+                <img id="img2" src="./image/image5.png" alt="">
+            </div>
+            <div class="product__item--text">
+              <div id="name2" class="product__item--name">
+                Adidas Prophere
+              </div>
+              <div id="des2" class="product__item--descrip">
+                short descript ...
+              </div>
+            </div>
+            <div class="product__item--buy">
+                <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+                <div id="price2" class="product__item--price">85$</div>
+            </div>
+            </div>
+            </div>
+            <div class="product__item">
+              <div class="product__item--content">
+                <div  class="product__item--img">
+                  <img id="img3" src="./image/image5.png" alt="">
+              </div>
+              <div class="product__item--text">
+                <div id="name3" class="product__item--name">
+                  Adidas Prophere
+                </div>
+                <div id="des3" class="product__item--descrip">
+                  short descript ...
+                </div>
+              </div>
+              <div class="product__item--buy">
+                  <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+                  <div id="price3" class="product__item--price">85$</div>
+              </div>
+              </div>
+              </div>
+      </div>
+      <div class="product__item--bot">
+        <div class="product__item">
+          <div class="product__item--content">
+            <div  class="product__item--img">
+              <img id="img4" src="./image/image5.png" alt="">
+          </div>
+          <div class="product__item--text">
+            <div id="name4" class="product__item--name">
+              Adidas Prophere
+            </div>
+            <div id="des4" class="product__item--descrip">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi repudiandae id assumenda ipsum dolorum vitae, neque dolore saepe qui. Impedit vel iure quisquam illo, saepe repellendus incidunt laborum repellat.
+            </div>
+          </div>
+          <div class="product__item--buy">
+              <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+              <div id="price4" class="product__item--price">85$</div>
+          </div>
+          </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item--content">
+              <div  class="product__item--img">
+                <img id="img5" src="./image/image5.png" alt="">
+            </div>
+            <div class="product__item--text">
+              <div id="name5" class="product__item--name">
+                Adidas Prophere
+              </div>
+              <div id="des5" class="product__item--descrip">
+                short descript ...
+              </div>
+            </div>
+            <div class="product__item--buy">
+                <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+                <div id="price5" class="product__item--price">85$</div>
+            </div>
+            </div>
+            </div>
+            <div class="product__item">
+              <div class="product__item--content">
+                <div  class="product__item--img">
+                  <img id="img6" src="./image/image5.png" alt="">
+              </div>
+              <div class="product__item--text">
+                <div id="name6" class="product__item--name">
+                  Adidas Prophere
+                </div>
+                <div id="des6" class="product__item--descrip">
+                  short descript ...
+                </div>
+              </div>
+              <div class="product__item--buy">
+                  <div class="product__item--btn"><a href="./detail.html">Buy now</a></div>
+                  <div id="price6" class="product__item--price">85$</div>
+              </div>
+              </div>
+              </div>
+      </div>
+     
+    </div>
+</section> -->
